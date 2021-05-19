@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/logo_main"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/ic_logo_letter" /><!--
+    <ImageView
+        android:id="@+id/logo_main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/ic_logo" />-->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bulldings_bg_white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bulldings_white" />
+
+    <LinearLayout
+        android:id="@+id/head_txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_main"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification Code"
+            android:layout_gravity="center"
+            android:textColor="@color/secondary_clr_v2"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sit Back and Relax ! "
+            android:textColor="@color/secondary_clr_v2"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Verify Your Mobile Number"
+            android:textColor="@color/secondary_clr_v2"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Enter the OTP below and get started "
+            android:textColor="@color/secondary_clr_v2"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/f_otp_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="+91 95876 52352 "
+                android:layout_margin="2dp"
+                android:textColor="@color/secondary_clr_v2"
+                android:textSize="15dp" />
+            <ImageView
+                android:id="@+id/f_otp_editphone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="2dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/edit_pen_white"/>
+        </LinearLayout>
+
+
+        <!--<EditText-->
+        <!--android:id="@+id/etOTPCode"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=""-->
+        <!--android:gravity="center"-->
+        <!--android:letterSpacing="0.5"-->
+        <!--android:inputType="number"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:maxLength="6"/>-->
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/otp_lines_whit"-->
+        <!--/>-->
+        <finance.joypay.com.jopayfinance.Utils.OtpView
+            android:id="@+id/etOTPCode"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:layout_height="wrap_content"></finance.joypay.com.jopayfinance.Utils.OtpView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnresendotp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="@string/text_resendotp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/secondary_clr_bg_rounded_rect"/>
+            <Button
+                android:id="@+id/btnsendOTP"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="@string/text_confirm"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/secondary_clr_bg_rounded_rect"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

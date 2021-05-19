@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="finance.joypay.com.jopayfinance.Fragment.LoanCreationFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/bg_dark_profile">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorWhite"
+                android:text="Add New Group"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+            -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Enter Group Name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/corner_radius_white_light"
+                android:hint="Enter Group Name"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorActionBar" />
+<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Enter Description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/corner_radius_white_light"
+                android:hint="Enter Description"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorActionBar" />
+
+
+            <Button
+                android:id="@+id/btn_add_groupcreation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/corner_radiuslight_blue"
+                android:gravity="center"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+</RelativeLayout>

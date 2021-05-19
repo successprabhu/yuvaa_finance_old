@@ -1,0 +1,30 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="thumbnail">60dp</dimen>
+    <dimen name="padd_10">10dp</dimen>
+
+    <dimen name="fab_margin_right">16dp</dimen>
+    <dimen name="fab_margin_bottom">16dp</dimen>
+    <dimen name="text_padding">20dp</dimen>
+
+    <!--Interview padding and margin-->
+    <dimen name="view_half_step">4dp</dimen>
+    <dimen name="view_margin_step1">8dp</dimen>
+    <dimen name="view_margin_step2">16dp</dimen>
+    <dimen name="view_margin_step3">24dp</dimen>
+    <dimen name="view_margin_step4">32dp</dimen>
+    <dimen name="view_margin_step5">40dp</dimen>
+    <dimen name="view_margin_step6">48dp</dimen>
+    <dimen name="view_margin_step7">56dp</dimen>
+    <dimen name="view_margin_step8">64dp</dimen>
+    <dimen name="view_margin_step9">72dp</dimen>
+    <dimen name="view_margin_step12">96dp</dimen>
+    <dimen name="view_margin_step16">128dp</dimen>
+    <dimen name="view_margin_step14">112dp</dimen>
+
+
+    <dimen name="align_case_details">104dp</dimen>
+    <dimen name="align_case_secondlevel">128dp</dimen>
+    <!--Text Size ikn sp-->
+    <dimen name="no_interaction_text_small">11sp</dimen>
+</resources>

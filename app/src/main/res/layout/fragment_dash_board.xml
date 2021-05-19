@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornerradius_dashboard_touch"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <FrameLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="bottom"
+                        android:padding="10dp"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/ic_custome"
+                        android:tint="@color/colorWhite" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Customers"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/act_dash_txt_customers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:padding="8dp"
+                            android:text="--"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/cornerradius_dashboard" />
+
+                <FrameLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|left"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:tint="@color/colorWhite"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_loans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Loans"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/act_dash_txt_loans"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="--"
+                            android:padding="8dp"
+                            android:textSize="18sp"
+
+                            android:textColor="@color/windowBackground"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:weightSum="10"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="1dp"
+                    android:layout_weight="5"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/cornerradius_dashboard" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="1dp"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/cornerradius_dashboard"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <FrameLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorWhite"
+                        android:src="@drawable/ic_sms_balance" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="SMS Balance"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/act_dash_txt_SMS_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="--"
+                            android:padding="8dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/cornerradius_dashboard" />
+
+
+                <FrameLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|left"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:tint="@color/colorWhite"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_loan_outstanding" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="Loan OutStanding"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/act_dash_txt_loan_outstanding"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="--"
+                            android:padding="8dp"
+                            android:layout_gravity="right"
+                            android:textColor="@color/windowBackground"
+                            android:gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/primary"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:text="Today Collection Report"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/todayCollectionReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

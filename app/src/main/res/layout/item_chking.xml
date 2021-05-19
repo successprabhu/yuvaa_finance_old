@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/a_splash_screen_coordinatorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/a_background">
+
+    <ScrollView
+        android:id="@+id/a_splash_screen_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- add on top parent layout: xmlns:pew="http://schemas.android.com/apk/res-auto" -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <com.fmsirvent.ParallaxEverywhere.PEWImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/splash"
+                    android:scaleType="centerCrop"
+                    app:reverse="none" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/splash_cone" />
+
+                        <ImageView
+                            android:id="@+id/center_logo"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="bottom"
+                            android:scaleType="fitXY"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_logo" />
+
+                </RelativeLayout>
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_step4"
+                android:layout_marginRight="@dimen/view_margin_step4"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/view_margin_step12"
+                android:tag="sticky">
+
+                <Button
+                    android:id="@+id/a_splash_screen_button_sign_google"
+                    style="@style/Raised.Button.Google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/view_margin_step1"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="@dimen/view_margin_step1"
+                    android:drawableLeft="@drawable/google_plus"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/view_margin_step2"
+                    android:text="Google"
+                    android:textAllCaps="false"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/a_splash_screen_button_sign_facebook"
+                    style="@style/Raised.Button.Facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/view_margin_step1"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="@dimen/view_margin_step1"
+                    android:drawableLeft="@drawable/ic_facebook_alt"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/view_margin_step2"
+                    android:text="Facebook"
+                    android:textAllCaps="false"
+                    android:visibility="gone" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin_step3">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="UserName"
+                        android:imeActionLabel="Verify"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textIsSelectable="false" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin_step3">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:imeActionLabel="Verify"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textIsSelectable="false" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/a_splash_screen_button_next"
+                    style="@style/Raised.Button.SignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_margin_step3"
+                    android:layout_marginTop="@dimen/view_margin_step3"
+                    android:elevation="2dp"
+                    android:text="Next"
+                    android:textAllCaps="false" />
+
+
+                <RelativeLayout
+                    android:id="@+id/a_splash_screen_container_existing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/a_splash_screen_textinput_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_margin_step1">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/a_splash_screen_edittext_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:textIsSelectable="false" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/a_splash_screen_button_forgot"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/a_splash_screen_textinput_password"
+                        android:layout_marginBottom="@dimen/view_margin_step1"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Forgot Password"
+                        android:textAllCaps="false"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/a_splash_screen_button_show_password"
+                        style="?android:borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/a_splash_screen_textinput_password"
+                        android:layout_marginBottom="@dimen/view_margin_step1"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Show Password"
+                        android:textAllCaps="false"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/a_splash_screen_button_sign_in"
+                        style="@style/Raised.Button.SignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/a_splash_screen_button_forgot"
+                        android:layout_marginBottom="@dimen/view_margin_step3"
+                        android:layout_marginTop="@dimen/view_margin_step3"
+                        android:elevation="2dp"
+                        android:text="SIGN IN"
+                        android:textAllCaps="false" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/a_splash_screen_container_new_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/view_margin_step2"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New User"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp" />
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_margin_step1">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/a_splash_screen_edittext_new_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="New Password"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:textIsSelectable="false" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_margin_step1">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/a_splash_screen_edittext_confirm_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Confirm Password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:textIsSelectable="false" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/a_splash_screen_button_sign_up"
+                        style="@style/Raised.Button.SignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/view_margin_step3"
+                        android:layout_marginTop="@dimen/view_margin_step3"
+                        android:elevation="2dp"
+                        android:text="SIGN UP"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/a_splash_screen_frame_logging"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentWhite"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/view_margin_step16"
+            android:indeterminate="true" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

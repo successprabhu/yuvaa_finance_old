@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_logo_letter" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/corner_radius_white"
+                android:gravity="center"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:text="9940715788"
+                android:textColor="@color/colorActionBar"
+                android:textColorHint="@color/hintcolor" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/corner_radius_white"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:text="test"
+                android:textColor="@color/colorActionBar"
+                android:textColorHint="@color/hintcolor" />
+            <!--<EditText-->
+            <!--android:id="@+id/edt_email"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:background="@drawable/corner_radius_white"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="Username"-->
+            <!--android:textColorHint="@color/hintcolor"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textColor="@color/colorActionBar"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:padding="5dp" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/edt_password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/corner_radius_white"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="Password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorHint="@color/hintcolor"-->
+            <!--android:textColor="@color/colorActionBar" />-->
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cornerradiunblue"
+                android:gravity="center"
+                android:onClick="moveToDashBoard"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="sign in"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="forgot password"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Do not have an account? "
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="moveToRegister"
+                    android:textColor="@drawable/text_link_selector"
+                    android:paddingLeft="8dp"
+                    android:text="Register" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

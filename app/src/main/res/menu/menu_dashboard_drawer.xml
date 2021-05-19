@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_w"
+            android:title="Dashboards" />
+        <item
+            android:id="@+id/nav_customergroups"
+            android:icon="@drawable/ic_customer_group_w"
+            android:title="Customer Groups" />
+        <item
+            android:id="@+id/nav_customers"
+            android:icon="@drawable/ic_customer_w"
+            android:title="Customers" />
+        <item
+            android:id="@+id/nav_add_expenses"
+            android:icon="@drawable/ic_expenses_w"
+            android:title="Add Expenses" />
+        <item
+            android:id="@+id/nav_new_loan"
+            android:icon="@drawable/ic_new_installment_loan_w"
+            android:title="New Installment Loan" />
+        <item
+            android:id="@+id/nav_emi_collection"
+            android:icon="@drawable/ic_emi_collection_w"
+            android:title="EMI Collection" />
+        <item
+            android:id="@+id/nav_collection_report"
+            android:icon="@drawable/ic_collection_repoer_w"
+            android:title="Collection Report" />
+        <item
+            android:id="@+id/nav_pending_report"
+            android:icon="@drawable/ic_overall_pending_w"
+            android:title="Overall Pendings Report" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_w"
+            android:title="Logout" />
+    </group>
+
+</menu>

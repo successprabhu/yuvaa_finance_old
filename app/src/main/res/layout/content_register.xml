@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/mainContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="finance.joypay.com.jopayfinance.Activity.RegisterActivity"
+    tools:showIn="@layout/activity_register">
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="204dp"
+        tools:ignore="MissingConstraints" />-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingBottom="15dp"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:paddingTop="15dp">-->
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbarStyle="insideOverlay">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:weightSum="1">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/splash"-->
+                        <!--android:layout_width="173dp"-->
+                        <!--android:layout_height="44dp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_margin="24dp"-->
+                        <!--android:src="@drawable/ic_logo" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="16dp"-->
+                        <!--android:text="SIGN UP"-->
+                        <!--android:textColor="@color/colorWhiteTranparent"-->
+                        <!--android:textSize="24sp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="4dp"-->
+                        <!--android:textColorHint="@color/colorWhiteTranparent">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/a_reg_edt_name"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/edtcommon"-->
+                            <!--android:hint="Name"-->
+                            <!--android:padding="8dp"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="15sp" />-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="4dp"-->
+                        <!--android:textColorHint="@color/colorWhiteTranparent">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/a_reg_edt_email"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/edtcommon"-->
+                            <!--android:hint="Email Address"-->
+                            <!--android:inputType="textEmailAddress"-->
+                            <!--android:padding="8dp"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="15sp" />-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="4dp"-->
+                        <!--android:textColorHint="@color/colorWhiteTranparent">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/a_reg_edt_username"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/edtcommon"-->
+                            <!--android:hint="User Name"-->
+
+                            <!--android:padding="8dp"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="15sp" />-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="4dp"-->
+                        <!--android:textColorHint="@color/colorWhiteTranparent">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/a_reg_edt_password"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/edtcommon"-->
+                            <!--android:hint="Password"-->
+                            <!--android:inputType="textPassword"-->
+
+                            <!--android:padding="8dp"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="15sp" />-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="4dp"-->
+                        <!--android:textColorHint="@color/colorWhiteTranparent">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/a_reg_edt_phonenumber"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/edtcommon"-->
+                            <!--android:hint="Phone Number"-->
+                            <!--android:inputType="number"-->
+                            <!--android:maxLength="10"-->
+                            <!--android:minLines="1"-->
+
+                            <!--android:padding="8dp"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="15sp" />-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/a_reg_btn_register"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginBottom="8dp"-->
+                        <!--android:layout_marginTop="24dp"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:text="Register"-->
+                        <!--android:textColor="#FFF" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+    <!--</LinearLayout>-->
+
+</FrameLayout>

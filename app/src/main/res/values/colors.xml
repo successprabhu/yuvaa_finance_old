@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F414E</color>
+    <color name="colorPrimaryDark">#3A3A46</color>
+    <color name="colorActionBar">#1AB394</color>
+    <color name="colorAccent">#1AB394</color>
+    <color name="hintcolor">#c5e7c7</color>
+    <color name="isActiviefalse">#fa315b</color>
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+
+    <color name="colorPrimaryDarkTranparent">#802C3E50</color>
+    <color name="colorWhiteTranparent">#a9a9a9</color>
+    <color name="colorWhite">#ffffff</color>>
+    <color name="secondary_clr_v2">#646262</color>
+    <color name="base_clr_v2">#15ac8d</color>
+    <color name="bg_lite_v2">#87dac9</color>
+    <color name="bg_dark_profile">#1AB394</color>
+<!--
+
+    //Eclinic
+-->
+
+    <color name="textColorPrimary">#212121</color>
+    <!--<color name="textColorPrimary">#365757</color>-->
+    <color name="textColorSecondary">#757575</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="teal_transparent">#e0f2f1</color>
+    <color name="teal_100">#b2dfdb</color>
+    <color name="facebook">#3b5998</color>
+    <color name="gplus">#d34836</color>
+    <color name ="scarlet">#ff2400</color>
+    <color name="teal_900">#004d40</color>
+    <color name = "red_900">#b71c1c</color>
+    <color name = "purple">#8e24aa</color>
+    <color name = "lime_100">#f0f4c3</color>
+    <color name = "lime_50">#f0f4c3</color>
+    <color name="offwhite">#eeeeee</color>
+    <color name="cyan_100">#b2ebf2</color>
+    <color name="blue">#039be5</color>
+    <color name="lightestBlue">#ebf0ef</color>
+    <color name="unfocussed">#9e9e9e</color>
+    <color name="grey">#4b4949</color>
+    <color name="focussed">#B6B6B6</color>
+    <!--<color name="focussed">#365757</color>-->
+    <color name="fbColor">#3b5998</color>
+    <color name="GColor">#d34836</color>
+    <color name="transparentWhite">#CCffffff</color>
+    <color name="yellow">#fdd835</color>
+    <color name="brown">#6d4c41</color>
+
+    <!--<color name="primary">#3F51B5</color>-->
+    <!--<color name="primaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+
+    <color name="accentDark">#f44336</color>
+
+    <color name="transparent_black">#22000000</color>
+    <!-- General settings-->
+    <color name="textInverse">#ffffff</color>
+    <color name="a_background">#EEEEEE</color>
+
+    <!--Splash screen colours-->
+    <color name="googleSignIn">#F2553B</color>
+    <!--<color name="googleSignIn">#FFFFFF</color>-->
+    <!--<color name="facebookSignIn">#3B5998</color>-->
+    <color name="facebookSignIn">#FFFFFF</color>
+    <color name="signIn">#209185</color>
+
+
+    <!--babycolor-->
+    <color name="babyColor">#e1bee7</color>
+    <color name="com_facebook_blue">#3B5998</color>
+
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="bgTitleLeft">#594691</color>
+    <color name="bgTitleRight">#ffffff</color>
+    <color name="bgContentTop">#594691</color>
+    <color name="bgContent">#ffffff</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="titleBadgeText">#adafb1</color>
+    <color name="mainTextColor">#343d43</color>
+    <color name="btnRequest">#ffbf12</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>
